@@ -1,0 +1,15 @@
+module unscrambler
+{
+    interface UnscramblerClient
+    {
+    boolean addToUsersArray(in string username);
+    boolean answerIsCorrect(in string username, in string answer);
+
+    string ScrambledWord(in string username);
+    string reScramble(in string username);
+
+    short returnAttemptsLeft(in string username);
+
+    void exitUser(in string username);
+    };
+};
